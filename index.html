@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение для учета продуктов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Учет продуктов питания</h1>
+    </header>
+
+    <main>
+        <section class="add-product">
+            <h2>Добавить продукт</h2>
+            <form id="productForm">
+                <label for="productName">Название продукта:</label>
+                <input type="text" id="productName" required>
+
+                <label for="productQuantity">Количество:</label>
+                <input type="number" id="productQuantity" min="1" value="1" required>
+
+                <label for="productCategory">Категория:</label>
+                <select id="productCategory">
+                    <option value="овощи">Овощи</option>
+                    <option value="фрукты">Фрукты</option>
+                    <option value="мясо">Мясо</option>
+                    <option value="молочные">Молочные продукты</option>
+                    <option value="крупы">Крупы</option>
+                    <option value="другое">Другое</option>
+                </select>
+
+                <button type="submit">Добавить</button>
+            </form>
+        </section>
+
+        <section class="product-list">
+            <h2>Список продуктов</h2>
+            <div class="filters">
+                <label for="filterCategory">Фильтр по категории:</label>
+                <select id="filterCategory">
+                    <option value="все">Все</option>
+                    <option value="овощи">Овощи</option>
+                    <option value="фрукты">Фрукты</option>
+                    <option value="мясо">Мясо</option>
+                    <option value="молочные">Молочные продукты</option>
+                    <option value="крупы">Крупы</option>
+                    <option value="другое">Другое</option>
+                </select>
+            </div>
+            <ul id="productsContainer">
+                <!-- Здесь будут отображаться продукты -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Приложение для учета продуктов</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
