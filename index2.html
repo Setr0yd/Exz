@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Универсальное приложение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Заголовок Приложения</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Добавить новую запись</h2>
+            <form id="dataForm">
+                <label for="dataName">Название:</label>
+                <input type="text" id="dataName" required>
+
+                <label for="dataValue">Значение:</label>
+                <input type="text" id="dataValue">
+
+                <button type="submit">Сохранить</button>
+            </form>
+        </section>
+
+        <section class="display-section">
+            <h2>Список записей</h2>
+            <ul id="dataList">
+                <!-- Здесь будут отображаться данные -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Мое Универсальное Приложение</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
